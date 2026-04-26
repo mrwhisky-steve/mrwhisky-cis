@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Backup
+*~
+*.swp
+
+# Local-only assets (uncomment if needed)
+# assets/photos/raw/
