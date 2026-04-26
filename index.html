@@ -10,14 +10,13 @@
 <body>
   <header class="nav">
     <div class="nav-inner">
-      <a href="index.html" class="brand"><span class="brand-icon">🥃</span>Mr.Whisky CIS</a>
+      <a href="index.html" class="brand"><img src="assets/logos/logo-white.png" alt="Mr.Whisky" class="brand-logo-img"><span class="brand-cis-suffix">CIS</span></a>
       <nav class="menu">
         <a href="colors.html">色彩</a>
         <a href="typography.html">字體</a>
         <a href="assets.html">素材</a>
         <a href="photography.html">攝影</a>
         <a href="social.html">社群</a>
-        <a href="tone.html">文案</a>
       </nav>
     </div>
   </header>
@@ -25,7 +24,10 @@
   <main>
     <section class="hero">
       <div class="label">Brand CIS</div>
-      <h1>Mr.Whisky 威士忌先生</h1>
+      <h1 class="hero-logo-h1">
+        <span class="hero-logo-mask" role="img" aria-label="Mr.Whisky 威士忌先生"></span>
+        <span class="visually-hidden">Mr.Whisky 威士忌先生</span>
+      </h1>
       <div class="tagline">Discover your fine &amp; rare bottle</div>
       <p>本站為 Mr.Whisky 威士忌先生的品牌視覺與語氣規範參考站。所有素材可直接複製連結貼給設計工具或合作對象，確保品牌呈現一致性。</p>
     </section>
@@ -54,46 +56,62 @@
 
       <div class="card-grid">
         <a href="colors.html" class="card">
-          <span class="icon">🎨</span>
+          <span class="card-num">01</span>
           <h3>色彩</h3>
           <p>主色、輔色、文字色與使用比例。</p>
+          <span class="card-arrow">VIEW →</span>
         </a>
 
         <a href="typography.html" class="card">
-          <span class="icon">🔤</span>
+          <span class="card-num">02</span>
           <h3>字體</h3>
           <p>標題、內文、數字字型與搭配範例。</p>
+          <span class="card-arrow">VIEW →</span>
         </a>
 
         <a href="assets.html" class="card">
-          <span class="icon">🖼️</span>
+          <span class="card-num">03</span>
           <h3>品牌素材</h3>
-          <p>Logo 變體、輔助圖、Badge — 一鍵複製連結。</p>
+          <p>Logo 變體、輔助圖 — 一鍵複製連結。</p>
+          <span class="card-arrow">VIEW →</span>
         </a>
 
         <a href="photography.html" class="card">
-          <span class="icon">📷</span>
+          <span class="card-num">04</span>
           <h3>產品攝影風格</h3>
           <p>構圖、光線、背景規範與參考圖。</p>
+          <span class="card-arrow">VIEW →</span>
         </a>
 
         <a href="social.html" class="card">
-          <span class="icon">📱</span>
+          <span class="card-num">05</span>
           <h3>社群貼文範本</h3>
           <p>IG / FB 圖文版型與排版範例。</p>
+          <span class="card-arrow">VIEW →</span>
         </a>
 
-        <a href="tone.html" class="card">
-          <span class="icon">✍️</span>
-          <h3>文案語氣</h3>
-          <p>業界術語對照與品牌口吻範例。</p>
-        </a>
       </div>
     </section>
   </main>
 
   <footer>
-    Mr.Whisky 威士忌先生 · 台北市大安區復興南路一段 141 號 · Email 待補 · IG @mrwhisky
+    <div class="footer-inner">
+      <div class="footer-block">
+        <div class="footer-brand">Mr.Whisky 威士忌先生</div>
+        <h4>Stores</h4>
+        <div class="footer-store"><span class="city">台中</span>南屯區永春東路 1122-1 號</div>
+        <div class="footer-store"><span class="city">台北</span>大安區復興南路一段 141 號</div>
+      </div>
+      <div class="footer-block">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><span class="label">Line</span><a href="https://line.me/R/ti/p/@mrwhisky">@mrwhisky</a></li>
+          <li><span class="label">IG</span><a href="https://instagram.com/mrwhisk_store">@mrwhisk_store</a></li>
+          <li><span class="label">Email</span><a href="mailto:chx0526@gmail.com">chx0526@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© Mr.Whisky 威士忌先生 · Discover your fine &amp; rare bottle</div>
   </footer>
 
   <script src="copy.js"></script>
