@@ -386,6 +386,15 @@ footer {
   margin-top: 80px;
 }
 
+/* ===== Brand Logo Reference (CSS-tinted via mask) ===== */
+.brand-logo {
+  -webkit-mask: url('assets/logos/logo-color-circle.png') center/contain no-repeat;
+  mask: url('assets/logos/logo-color-circle.png') center/contain no-repeat;
+}
+.brand-logo.brand-tan { background-color: #D2A475; }
+.brand-logo.brand-charcoal { background-color: #3E3A39; }
+.brand-logo.brand-white { background-color: #FFFFFF; }
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .nav-inner { flex-wrap: wrap; }
