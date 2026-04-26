@@ -12,10 +12,32 @@ function showCopied(button, originalText) {
   }, 1500);
 }
 
+function legacyCopy(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  let ok = false;
+  try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+  document.body.removeChild(ta);
+  return ok;
+}
+
+function copyToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    return navigator.clipboard.writeText(text);
+  }
+  return new Promise((resolve, reject) => {
+    legacyCopy(text) ? resolve() : reject(new Error('legacy copy failed'));
+  });
+}
+
 function copyAssetUrl(button, path) {
   const url = `${window.location.origin}${window.location.pathname.replace(/\/[^\/]*$/, '/')}${path}`;
   const original = button.textContent;
-  navigator.clipboard.writeText(url).then(
+  copyToClipboard(url).then(
     () => showCopied(button, original),
     (err) => {
       console.error('複製失敗：', err);
@@ -26,7 +48,7 @@ function copyAssetUrl(button, path) {
 
 function copyText(button, text) {
   const original = button.textContent;
-  navigator.clipboard.writeText(text).then(
+  copyToClipboard(text).then(
     () => showCopied(button, original),
     (err) => {
       console.error('複製失敗：', err);

@@ -13,6 +13,12 @@
 open index.html
 ```
 
+> ⚠️ **本機 file:// 開啟時複製按鈕可能失敗**（瀏覽器安全限制）。如要驗證複製功能，請改用 HTTP server：
+> ```bash
+> python3 -m http.server 8000
+> # 開啟 http://localhost:8000
+> ```
+
 或用任何 HTTP server：
 
 ```bash
