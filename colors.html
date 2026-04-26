@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mr.Whisky CIS · 色彩</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="brand-icon">🥃</span>Mr.Whisky CIS</a>
+      <nav class="menu">
+        <a href="colors.html">色彩</a>
+        <a href="typography.html">字體</a>
+        <a href="assets.html">素材</a>
+        <a href="photography.html">攝影</a>
+        <a href="social.html">社群</a>
+        <a href="tone.html">文案</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="label">Brand Colors</div>
+      <h2>色彩規範</h2>
+      <p class="description">Mr.Whisky 威士忌先生的官方品牌用色。點擊「複製 HEX」可直接複製色碼貼到 AI 工具或設計軟體。</p>
+
+      <h3 style="margin: 24px 0 16px; color: var(--muted); font-size: 16px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;">主色</h3>
+      <div class="swatch-grid">
+        <!-- TODO[STEVE]: 從 .ai 提取後替換 HEX、CMYK、Pantone -->
+        <div class="swatch-card">
+          <div class="color" style="background: #2D3A3A;"></div>
+          <div class="info">
+            <div class="name">Brand Primary</div>
+            <div class="codes">
+              HEX  #2D3A3A<br>
+              CMYK 待補<br>
+              PMS  待補
+            </div>
+            <button class="btn" onclick="copyText(this, '#2D3A3A')">📋 複製 HEX</button>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin: 32px 0 16px; color: var(--muted); font-size: 16px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;">輔色</h3>
+      <div class="swatch-grid">
+        <div class="swatch-card">
+          <div class="color" style="background: #C8A951;"></div>
+          <div class="info">
+            <div class="name">Brand Accent</div>
+            <div class="codes">
+              HEX  #C8A951<br>
+              CMYK 待補<br>
+              PMS  待補
+            </div>
+            <button class="btn" onclick="copyText(this, '#C8A951')">📋 複製 HEX</button>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin: 32px 0 16px; color: var(--muted); font-size: 16px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;">文字 / 中性色</h3>
+      <div class="swatch-grid">
+        <div class="swatch-card">
+          <div class="color" style="background: #1A1410;"></div>
+          <div class="info">
+            <div class="name">Text Dark</div>
+            <div class="codes">HEX  #1A1410</div>
+            <button class="btn" onclick="copyText(this, '#1A1410')">📋 複製 HEX</button>
+          </div>
+        </div>
+        <div class="swatch-card">
+          <div class="color" style="background: #F5F1E8; border: 1px solid var(--border);"></div>
+          <div class="info">
+            <div class="name">Text Light / Background</div>
+            <div class="codes">HEX  #F5F1E8</div>
+            <button class="btn" onclick="copyText(this, '#F5F1E8')">📋 複製 HEX</button>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin: 32px 0 16px; color: var(--muted); font-size: 16px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;">使用比例建議</h3>
+      <p>主色 60% / 輔色 30% / 文字色與點綴 10%。在精品頁面或品酒會視覺上，可提高主色至 80% 以強化品牌沉穩感。</p>
+    </section>
+  </main>
+
+  <footer>
+    Mr.Whisky 威士忌先生 · 台北市大安區復興南路一段 141 號 · IG @mrwhisky
+  </footer>
+
+  <script src="copy.js"></script>
+</body>
+</html>
