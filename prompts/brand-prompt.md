@@ -49,6 +49,7 @@
 - ❌ Emoji 當 icon（Steve 嫌醜）
 - ❌ 「立即註冊」「開始使用」這類 SaaS 文案
 - ❌ 過度動畫、彈跳效果
+- ❌ **用文字寫 "Mr.Whisky" 當品牌標誌**——一律使用本檔案「Logo」段落列出的 PNG URL（`<img src="...">`），不可用 CSS 文字、wordmark 重打、或 SVG 模仿替代。Logo 為訂製字體，文字版會破壞識別。
 
 ## 文案語氣
 
