@@ -147,18 +147,25 @@
 
 輔助圖型只能作為「點綴」或「重複底紋」使用，**禁止單張放大當主視覺**。
 
-**✅ 正確 A — 密集小重複 tile（杯墊風，CIS 指定 tiling 主來源是 xpattern-2）**
+**✅ 正確 A — XPattern 2 中型 tile**（單元 60-100px，杯墊／信封／背板）
 ```css
 background-image: url('https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/xpattern-2-tan.png');
 background-size: 64px 64px;
 background-repeat: repeat;
 ```
 
-**✅ 正確 B — 底部細邊飾條（紙袋風）**
+**✅ 正確 B — XPattern 1 小型密集 tile**（單元 36-50px，紙袋內襯／書封背紋）
+```css
+background-image: url('https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/xpattern-1-tan.png');
+background-size: 44px 44px;
+background-repeat: repeat;
+```
+
+**✅ 變體 C — 底部細邊飾條**（紙袋下沿，高度 24-40px）
 ```html
 <div style="
   height: 32px;
-  background-image: url('https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/xpattern-2-tan.png');
+  background-image: url('https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/xpattern-1-tan.png');
   background-size: 24px 24px;
   background-repeat: repeat-x;
 "></div>
