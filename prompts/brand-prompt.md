@@ -173,9 +173,11 @@ background-repeat: repeat;
 
 **❌ 禁止**：把單一 `xpattern-{1,2}-{色}.png` 放大當 hero／單張裝飾／佔版面 30%+。判斷：尺寸 > 120px 就先停下來。
 
-**參考應用尺寸**：
-- 杯墊（dense tile）：`logo-application-coaster.png`
-- 紙袋（細邊飾條）：`logo-application-paperbag.png`
+**權威範例（CIS 規範「排列組合」官方示意，對齊這個密度）**：
+- `xpattern-1-tile-spec.png`
+- `xpattern-2-tile-spec.png`
+
+**實體應用**：`logo-application-coaster.png`、`logo-application-paperbag.png`、`logo-application-envelope.png`
 
 **設計概念稿**：https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/design-concept.png
 

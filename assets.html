@@ -64,25 +64,19 @@
       <p style="margin-bottom: 20px; opacity: 0.85;">兩款品牌輔助圖型，皆從原 LOGO 拆解後重新組合為對稱單元，僅作為**密集重複底紋**或**細邊飾條**使用，不是裝飾物件。每款 4 色變體。</p>
 
       <h4 style="margin: 24px 0 12px; color: var(--gold); font-size: 14px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;">用法示範 — 看這裡，別搞錯</h4>
-      <p style="margin-bottom: 16px; font-size: 14px; opacity: 0.85;">輔助圖型只有兩種正確用法。下方為實際 CSS 渲染（不是另截圖），左二為正確、右一為禁止。</p>
+      <p style="margin-bottom: 16px; font-size: 14px; opacity: 0.85;">下方為品牌規範書中的「輔助圖形排列組合」官方示意——這就是輔助圖型的正確用法：作為小單元密集重複的 tile 底紋。最右一格為禁止用法（單張放大佔版面）。</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-bottom:16px">
 
         <div>
-          <div style="aspect-ratio:1/1;background-color:#1A1410;background-image:url('assets/illustrations/xpattern-2-tan.png');background-size:64px 64px;background-repeat:repeat;border-radius:8px;border:1px solid var(--border)"></div>
-          <p style="margin:10px 0 4px;color:#7BA17B;font-size:14px;font-weight:600">✅ 正確 A — XPattern 2 中型 tile</p>
-          <p style="margin:0 0 8px;font-size:13px;opacity:0.75">單元 60-100px，鋪滿整塊（杯墊、信封、背板）</p>
-          <pre style="background:var(--bg-card);padding:12px;border-radius:6px;font-size:12px;overflow-x:auto;color:var(--cream);margin:0"><code>background-image: url(.../xpattern-2-tan.png);
-background-size: 64px 64px;
-background-repeat: repeat;</code></pre>
+          <div style="background:#F5F1E8;border-radius:8px;border:1px solid var(--border);overflow:hidden;padding:16px"><img src="assets/illustrations/xpattern-1-tile-spec.png" alt="XPattern 排列組合 範例 1" style="display:block;width:100%;height:auto"></div>
+          <p style="margin:10px 0 4px;color:#7BA17B;font-size:14px;font-weight:600">✅ 正確 A — 小單元密集 tile（單色 / 雙色）</p>
+          <p style="margin:0 0 8px;font-size:13px;opacity:0.75">CIS 規範官方示意。每個單元 ~ 80-120px，緊密重複，鋪滿整塊（杯墊、信封內襯、卡片底紋）。</p>
         </div>
 
         <div>
-          <div style="aspect-ratio:1/1;background-color:#1A1410;background-image:url('assets/illustrations/xpattern-1-tan.png');background-size:44px 44px;background-repeat:repeat;border-radius:8px;border:1px solid var(--border)"></div>
-          <p style="margin:10px 0 4px;color:#7BA17B;font-size:14px;font-weight:600">✅ 正確 B — XPattern 1 小型密集 tile</p>
-          <p style="margin:0 0 8px;font-size:13px;opacity:0.75">單元 36-50px，更密（紙袋內襯、書封背紋、卡片底紋）</p>
-          <pre style="background:var(--bg-card);padding:12px;border-radius:6px;font-size:12px;overflow-x:auto;color:var(--cream);margin:0"><code>background-image: url(.../xpattern-1-tan.png);
-background-size: 44px 44px;
-background-repeat: repeat;</code></pre>
+          <div style="background:#F5F1E8;border-radius:8px;border:1px solid var(--border);overflow:hidden;padding:16px"><img src="assets/illustrations/xpattern-2-tile-spec.png" alt="XPattern 排列組合 範例 2" style="display:block;width:100%;height:auto"></div>
+          <p style="margin:10px 0 4px;color:#7BA17B;font-size:14px;font-weight:600">✅ 正確 B — 對稱緊密 tile（單色 / 雙色）</p>
+          <p style="margin:0 0 8px;font-size:13px;opacity:0.75">CIS 規範官方示意。緞帶向 4 方向鏡像、貼合無留白縫隙（紙袋大面積、活動背板、外盒）。</p>
         </div>
 
         <div>
@@ -91,13 +85,10 @@ background-repeat: repeat;</code></pre>
             <div style="position:absolute;top:8px;right:8px;background:#6B2D2D;color:var(--cream);font-size:11px;padding:2px 8px;border-radius:3px;letter-spacing:0.5px;font-weight:600">DON'T</div>
           </div>
           <p style="margin:10px 0 4px;color:#D17171;font-size:14px;font-weight:600">❌ 禁止 — 單張放大當主視覺</p>
-          <p style="margin:0 0 8px;font-size:13px;opacity:0.75">佔版面 30%+ 或被肉眼看出單元邊界，會立刻像便宜印刷品</p>
-          <pre style="background:var(--bg-card);padding:12px;border-radius:6px;font-size:12px;overflow-x:auto;color:#D17171;margin:0"><code>&lt;!-- 不要這樣寫 --&gt;
-&lt;img src="xpattern-2-tan.png"
-     style="width:100%"&gt;</code></pre>
+          <p style="margin:0 0 8px;font-size:13px;opacity:0.75">把單一對稱單元放大佔版面 30%+，會立刻像便宜印刷品。</p>
         </div>
       </div>
-      <p style="font-size:13px;color:var(--muted);margin-bottom:32px">判斷準則：尺寸 &gt; 120px 或佔版面 30%+，先停下來——99% 是用錯了。實際應用可參考 <a href="assets/illustrations/logo-application-coaster.png" style="color:var(--gold)">杯墊（dense tile）</a>與 <a href="assets/illustrations/logo-application-paperbag.png" style="color:var(--gold)">紙袋（細邊飾條）</a>。</p>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:32px">判斷準則：輔助圖型必須是「肉眼一眼就看出多個單元緊密重複」。若你打算用的尺寸大到只看得見一兩個單元、佔版面 30%+，那就是用錯了。實際應用見 <a href="assets/illustrations/logo-application-coaster.png" style="color:var(--gold)">杯墊</a>、<a href="assets/illustrations/logo-application-envelope.png" style="color:var(--gold)">信封</a>、<a href="assets/illustrations/logo-application-paperbag.png" style="color:var(--gold)">紙袋</a>。</p>
 
       <h4 style="margin: 24px 0 12px; color: var(--gold); font-size: 14px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;">XPattern 1 — 蝴蝶緞帶對稱型</h4>
       <p style="margin-bottom: 12px; font-size: 14px; opacity: 0.85;">由 4 條 M 緞帶上下左右鏡像組合而成，視覺較密、留白適中，適合中小尺寸應用（杯墊、信封、紙袋、書封）。</p>
