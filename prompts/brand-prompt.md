@@ -65,7 +65,7 @@
   - 台北市大安區復興南路一段 141 號
 - **聯絡**：
   - Line `@mrwhisky`
-  - IG `@mrwhisk_store`
+  - IG `@mrwhisky_store` — https://www.instagram.com/mrwhisky_store
   - Email chx0526@gmail.com
 - **版權**：© Mr.Whisky 威士忌先生 · Discover your fine & rare bottle
 
@@ -82,49 +82,71 @@
 
 **Base URL**：`https://mrwhisky-steve.github.io/mrwhisky-cis/assets/`
 
-## Logo（9 個變體）
+## Logo（10 種形態 × 4 色 = 40 個變體）
 
-| 用途 | 檔名 | 完整 URL |
-|---|---|---|
-| 標準橫式 logo | `logo-horizontal.png` | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/logo-horizontal.png |
-| 直式堆疊（深色版） | `logo-stacked-dark.png` | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/logo-stacked-dark.png |
-| 直式堆疊（暖棕版） | `logo-stacked-tan.png` | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/logo-stacked-tan.png |
-| 純黑單色 | `logo-black.png` | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/logo-black.png |
-| 純白單色（深底用） | `logo-white.png` | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/logo-white.png |
-| 圓形彩色版 | `logo-color-circle.png` | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/logo-color-circle.png |
-| 圓角矩形彩色版 | `logo-color-rounded.png` | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/logo-color-rounded.png |
-| 英文 wordmark | `wordmark-en.png` | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/wordmark-en.png |
-| 中文 wordmark | `wordmark-zh.png` | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/wordmark-zh.png |
+統一命名 schema：`{形態}-{色號}.png`
+
+**形態（10 種）**：
+| 形態 | 用途 |
+|---|---|
+| `mark` | 純標誌（圓圈+S 緞帶，無文字） |
+| `wordmark-en` | 單獨「Mr.Whisky」英文 |
+| `wordmark-zh` | 單獨「威士忌先生」中文 |
+| `combo-h-en` | logo + Mr.Whisky 橫排 |
+| `combo-h-zh` | logo + 威士忌先生 橫排 |
+| `combo-v-en` | logo 上 / Mr.Whisky 下 直式 |
+| `combo-v-zh` | logo 上 / 威士忌先生 下 直式 |
+| `combo-v-full` | logo / Mr.Whisky / 威士忌先生 三層直式 |
+| `combo-v-full-reverse` | logo / 威士忌先生 / Mr.Whisky 三層（順序顛倒） |
+| `combo-v-tall` | 中文垂直書寫超細長版 |
+
+**色號（4 色）**：
+- `charcoal` `#3E3A39` — 淺底用（取代純黑）
+- `tan` `#D2A475` — 主視覺、燙金、CTA
+- `green` `#002504` — **品牌記憶色**，每件物料必出現
+- `cream` `#F5F1E8` — 深底用（取代純白）
+
+**Base URL**：`https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/`
+
+舉例：
+- `combo-h-en-tan.png` — 暖棕橫式 logo+英文
+- `combo-v-full-cream.png` — 米色三層直式（深底用）
+- `mark-green.png` — 深綠純圖標
 
 **選用原則**：
-- 深底 → 用 `logo-white.png` 或 `logo-stacked-tan.png`
-- 淺底（米色/白） → 用 `logo-black.png` 或 `logo-stacked-dark.png`
-- 社群頭像 → 用 `logo-color-circle.png`
-- 大面積品牌主視覺 → 用 `logo-stacked-tan.png`（暖棕在深底最有質感）
-- **Logo 為訂製字體，禁止自行重製文字版**
+- 網頁 header / 招牌 → `combo-h-en-{色}` 或 `combo-h-zh-{色}`
+- 主視覺、海報、禮盒 → `combo-v-full-{色}` 或 `combo-v-en-{色}`
+- 社群頭像 → `mark-{色}` 配色塊背景
+- 書脊／酒櫃側貼／IG Story 直幅 → `combo-v-tall-{色}`
+- 深底 → `cream` 或 `tan` 色號
+- 淺底 → `charcoal` 或 `tan` 色號
+- 大面積品牌主視覺 → `tan`（暖棕在深底最有質感）
 
-## 輔助圖型（X-pattern · 緞帶 pattern）
+**禁用變體**：
+- ❌ logo + Mr.Whisky + 威士忌先生 三元素全部排成一條橫排（破壞留白質感）
+- ❌ 純黑（用 `charcoal`）、純白（用 `cream`）
+- ❌ **Logo 為訂製字體，禁止自行重製文字版**
 
-主視覺輔助元素，常用在背景紋理、紙袋圖樣、信封內襯、版面點綴。
+**向後相容**（舊 URL 仍可用）：`logo-white.png` = `combo-h-en-cream.png`、`logo-black.png` = `logo-horizontal.png` = `combo-h-en-charcoal.png`、`wordmark-en.png` = `wordmark-en-charcoal.png`、`wordmark-zh.png` = `wordmark-zh-charcoal.png`
 
-**緞帶 / X-pattern（aux-pattern）**
+## 輔助圖型（XPattern 1 · XPattern 2）
 
-| 變體 | URL |
+兩款獨立單元，可重複排列為背景 pattern。每款 4 色變體。
+
+**Base URL**：`https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/`
+
+| Pattern | URL（替換 `{色}` 為 charcoal/tan/green/cream） |
 |---|---|
-| 暖棕版 | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/aux-pattern-tan.png |
-| 深綠版 | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/aux-pattern-green.png |
-| 平鋪 tile | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/aux-pattern-tile.png |
-| 結構稿 | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/aux-pattern-construction.png |
+| **XPattern 1**（M 形，較密；杯墊／信封／紙袋） | `xpattern-1-{色}.png` |
+| **XPattern 2**（緞帶形，較疏；背板／橫幅／外盒） | `xpattern-2-{色}.png` |
+| XPattern 1 完整對稱版 | `xpattern-1-composition.png` |
+| XPattern 2 完整對稱版 | `xpattern-2-composition.png` |
 
-**輔助圖型 2（aux-pattern-2）**
+舉例：
+- `xpattern-1-tan.png` — 暖棕單一單元
+- `xpattern-2-green.png` — 深綠單一單元
 
-| 變體 | URL |
-|---|---|
-| 暖棕版 | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/aux-pattern-2-tan.png |
-| 深綠版 | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/aux-pattern-2-green.png |
-| 平鋪 tile | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/aux-pattern-2-tile.png |
-| 應用示意 | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/aux-pattern-2-application.png |
-| 結構稿 | https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/aux-pattern-2-construction.png |
+**用法**：把單一單元當 CSS `background-image` + `background-repeat: repeat`，或在設計工具裡平鋪。
 
 **設計概念稿**：https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/design-concept.png
 
@@ -159,7 +181,11 @@
 **做網頁時直接寫**：
 
 ```html
-<img src="https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/logo-stacked-tan.png" alt="Mr.Whisky" style="height: 80px;">
+<!-- 深底 hero 用米色三層直式 -->
+<img src="https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/combo-v-full-cream.png" alt="Mr.Whisky" style="height: 200px;">
+
+<!-- 淺底 header 用深灰橫式 -->
+<img src="https://mrwhisky-steve.github.io/mrwhisky-cis/assets/logos/combo-h-en-charcoal.png" alt="Mr.Whisky" style="height: 48px;">
 ```
 
 **叫 Claude 設計時的 prompt**：

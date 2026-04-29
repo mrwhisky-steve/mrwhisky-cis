@@ -27,168 +27,59 @@
       <h2>品牌素材</h2>
       <p class="description">點擊「複製連結」按鈕即可複製圖片網址，可直接用於網頁、文章、簡報、AI 工具。點擊「下載」可下載原始檔。</p>
 
-      <h3 style="margin: 24px 0 16px; color: var(--muted); font-size: 16px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;">官方品牌標誌變體</h3>
-      <p style="margin-bottom: 20px; opacity: 0.85;">此為品牌標誌彩色與單色表現方式之基本規範與準則。為求提高品牌形象的辨識度及一致性，運用時請遵守準則。</p>
+      <h3 style="margin: 24px 0 16px; color: var(--muted); font-size: 16px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;">官方品牌標誌</h3>
+      <p style="margin-bottom: 20px; opacity: 0.85;">所有 Logo 變體採用統一命名 schema：<code>{形態}-{色號}.png</code>。色號共 4 種：<code>charcoal</code>（深灰 #3E3A39，淺底用）、<code>tan</code>（暖棕 #D2A475，主視覺）、<code>green</code>（深綠 #002504，品牌記憶色）、<code>cream</code>（米色 #F5F1E8，深底用）。形態共 10 種，列於下方。</p>
 
-      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:24px">
-        <div style="background:#ffffff;padding:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px">
-          <div class="brand-logo brand-tan" style="width:120px;height:120px"></div>
-        </div>
-        <div style="background:#3E3A39;padding:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px">
-          <div class="brand-logo brand-tan" style="width:120px;height:120px"></div>
-        </div>
-        <div style="grid-column:span 2;color:var(--muted);font-size:13px;letter-spacing:2px;text-transform:uppercase">彩色（暖棕）</div>
-
-        <div style="background:#ffffff;padding:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px">
-          <div class="brand-logo brand-tan" style="width:120px;height:120px"></div>
-        </div>
-        <div style="background:#D2A475;padding:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px">
-          <div class="brand-logo brand-white" style="width:120px;height:120px"></div>
-        </div>
-        <div style="grid-column:span 2;color:var(--muted);font-size:13px;letter-spacing:2px;text-transform:uppercase">單色 — 棕</div>
-
-        <div style="background:#ffffff;padding:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px">
-          <div class="brand-logo brand-charcoal" style="width:120px;height:120px"></div>
-        </div>
-        <div style="background:#3E3A39;padding:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;min-height:140px">
-          <div class="brand-logo brand-white" style="width:120px;height:120px"></div>
-        </div>
-        <div style="grid-column:span 2;color:var(--muted);font-size:13px;letter-spacing:2px;text-transform:uppercase">單色 — 黑</div>
+      <h4 style="margin: 32px 0 12px; color: var(--gold); font-size: 14px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;">Mark — 純標誌（圓圈 + S 緞帶）</h4>
+      <div class="asset-grid">
+        <div class="asset-card"><div class="preview"><img src="assets/logos/mark-charcoal.png" alt="mark-charcoal"></div><div class="info"><h3>mark-charcoal</h3><p class="usage">深灰；社群頭像、icon、淺底</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/mark-charcoal.png')">📋 複製連結</button><a class="btn" href="assets/logos/mark-charcoal.png" download>⬇ 下載</a></div></div></div>
+        <div class="asset-card"><div class="preview"><img src="assets/logos/mark-tan.png" alt="mark-tan"></div><div class="info"><h3>mark-tan</h3><p class="usage">暖棕；主視覺、燙金應用</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/mark-tan.png')">📋 複製連結</button><a class="btn" href="assets/logos/mark-tan.png" download>⬇ 下載</a></div></div></div>
+        <div class="asset-card"><div class="preview"><img src="assets/logos/mark-green.png" alt="mark-green"></div><div class="info"><h3>mark-green</h3><p class="usage">深綠；紙袋、品牌記憶色露出</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/mark-green.png')">📋 複製連結</button><a class="btn" href="assets/logos/mark-green.png" download>⬇ 下載</a></div></div></div>
+        <div class="asset-card"><div class="preview dark-preview"><img src="assets/logos/mark-cream.png" alt="mark-cream"></div><div class="info"><h3>mark-cream</h3><p class="usage">米色；深底背景、封面</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/mark-cream.png')">📋 複製連結</button><a class="btn" href="assets/logos/mark-cream.png" download>⬇ 下載</a></div></div></div>
       </div>
 
-      <p style="font-size:13px;color:var(--muted);margin-bottom:32px">註：以上 6 種為品牌官方規範變體。下方為已匯出可直接複製連結／下載的 PNG 檔。暖棕（彩色 / 單色棕）版本目前尚未匯出獨立 PNG，僅於上方規範示意（透過 CSS 動態著色）。如需 PNG 檔請從 PSD 主檔匯出。</p>
-
-      <h3 style="margin: 24px 0 16px; color: var(--muted); font-size: 16px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;">可下載 Logo 變體</h3>
+      <h4 style="margin: 32px 0 12px; color: var(--gold); font-size: 14px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;">Wordmark — 單獨標準字</h4>
       <div class="asset-grid">
+        <div class="asset-card"><div class="preview"><img src="assets/logos/wordmark-en-charcoal.png" alt="wordmark-en"></div><div class="info"><h3>wordmark-en-{色}</h3><p class="usage">Mr.Whisky 英文標準字（4 色）</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/wordmark-en-charcoal.png')">📋 複製 charcoal</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/wordmark-en-tan.png')">tan</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/wordmark-en-green.png')">green</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/wordmark-en-cream.png')">cream</button></div></div></div>
+        <div class="asset-card"><div class="preview"><img src="assets/logos/wordmark-zh-charcoal.png" alt="wordmark-zh"></div><div class="info"><h3>wordmark-zh-{色}</h3><p class="usage">威士忌先生 中文標準字（4 色）</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/wordmark-zh-charcoal.png')">📋 複製 charcoal</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/wordmark-zh-tan.png')">tan</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/wordmark-zh-green.png')">green</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/wordmark-zh-cream.png')">cream</button></div></div></div>
+      </div>
 
-        <div class="asset-card">
-          <div class="preview">
-            <img src="assets/logos/logo-color-rounded.png" alt="彩色 Logo（圓角）" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-            <div class="placeholder-img" style="display:none">圖檔未提供<br>assets/logos/logo-color-rounded.png</div>
-          </div>
-          <div class="info">
-            <h3>彩色 Logo（圓角）</h3>
-            <p class="usage">適用：App Icon、社群頭像</p>
-            <div class="btn-group">
-              <button class="btn" onclick="copyAssetUrl(this, 'assets/logos/logo-color-rounded.png')">📋 複製連結</button>
-              <a class="btn" href="assets/logos/logo-color-rounded.png" download>⬇ 下載</a>
-            </div>
-          </div>
-        </div>
+      <h4 style="margin: 32px 0 12px; color: var(--gold); font-size: 14px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;">Combo · 橫式 — 網頁 header / 招牌</h4>
+      <div class="asset-grid">
+        <div class="asset-card"><div class="preview"><img src="assets/logos/combo-h-en-charcoal.png" alt="combo-h-en"></div><div class="info"><h3>combo-h-en-{色}</h3><p class="usage">logo + Mr.Whisky 橫排</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-h-en-charcoal.png')">📋 charcoal</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-h-en-tan.png')">tan</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-h-en-green.png')">green</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-h-en-cream.png')">cream</button></div></div></div>
+        <div class="asset-card"><div class="preview"><img src="assets/logos/combo-h-zh-charcoal.png" alt="combo-h-zh"></div><div class="info"><h3>combo-h-zh-{色}</h3><p class="usage">logo + 威士忌先生 橫排</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-h-zh-charcoal.png')">📋 charcoal</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-h-zh-tan.png')">tan</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-h-zh-green.png')">green</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-h-zh-cream.png')">cream</button></div></div></div>
+      </div>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:24px">⚠️ 不提供「logo + 英文 + 中文」三元素全橫排版本（破壞留白質感）。三元素都要時請改用直式。</p>
 
-        <div class="asset-card">
-          <div class="preview">
-            <img src="assets/logos/logo-color-circle.png" alt="彩色 Logo（圓形）" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-            <div class="placeholder-img" style="display:none">圖檔未提供<br>assets/logos/logo-color-circle.png</div>
-          </div>
-          <div class="info">
-            <h3>彩色 Logo（圓形）</h3>
-            <p class="usage">適用：大頭貼、圓形框架</p>
-            <div class="btn-group">
-              <button class="btn" onclick="copyAssetUrl(this, 'assets/logos/logo-color-circle.png')">📋 複製連結</button>
-              <a class="btn" href="assets/logos/logo-color-circle.png" download>⬇ 下載</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="asset-card">
-          <div class="preview">
-            <img src="assets/logos/logo-horizontal.png" alt="橫式 Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-            <div class="placeholder-img" style="display:none">圖檔未提供<br>assets/logos/logo-horizontal.png</div>
-          </div>
-          <div class="info">
-            <h3>橫式 Logo</h3>
-            <p class="usage">適用：網站 Header、Badge</p>
-            <div class="btn-group">
-              <button class="btn" onclick="copyAssetUrl(this, 'assets/logos/logo-horizontal.png')">📋 複製連結</button>
-              <a class="btn" href="assets/logos/logo-horizontal.png" download>⬇ 下載</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="asset-card">
-          <div class="preview dark-preview">
-            <img src="assets/logos/logo-white.png" alt="白色 Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-            <div class="placeholder-img" style="display:none">圖檔未提供<br>assets/logos/logo-white.png</div>
-          </div>
-          <div class="info">
-            <h3>白色 Logo</h3>
-            <p class="usage">適用：深色背景、封面</p>
-            <div class="btn-group">
-              <button class="btn" onclick="copyAssetUrl(this, 'assets/logos/logo-white.png')">📋 複製連結</button>
-              <a class="btn" href="assets/logos/logo-white.png" download>⬇ 下載</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="asset-card">
-          <div class="preview">
-            <img src="assets/logos/logo-black.png" alt="黑色 Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-            <div class="placeholder-img" style="display:none">圖檔未提供<br>assets/logos/logo-black.png</div>
-          </div>
-          <div class="info">
-            <h3>黑色 Logo</h3>
-            <p class="usage">適用：淺色背景、印刷</p>
-            <div class="btn-group">
-              <button class="btn" onclick="copyAssetUrl(this, 'assets/logos/logo-black.png')">📋 複製連結</button>
-              <a class="btn" href="assets/logos/logo-black.png" download>⬇ 下載</a>
-            </div>
-          </div>
-        </div>
-
+      <h4 style="margin: 32px 0 12px; color: var(--gold); font-size: 14px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;">Combo · 直式 — 主視覺 / 海報 / 禮盒</h4>
+      <div class="asset-grid">
+        <div class="asset-card"><div class="preview"><img src="assets/logos/combo-v-en-charcoal.png" alt="combo-v-en"></div><div class="info"><h3>combo-v-en-{色}</h3><p class="usage">logo 上 / Mr.Whisky 下</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-en-charcoal.png')">📋 charcoal</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-en-tan.png')">tan</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-en-green.png')">green</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-en-cream.png')">cream</button></div></div></div>
+        <div class="asset-card"><div class="preview"><img src="assets/logos/combo-v-zh-charcoal.png" alt="combo-v-zh"></div><div class="info"><h3>combo-v-zh-{色}</h3><p class="usage">logo 上 / 威士忌先生 下</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-zh-charcoal.png')">📋 charcoal</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-zh-tan.png')">tan</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-zh-green.png')">green</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-zh-cream.png')">cream</button></div></div></div>
+        <div class="asset-card"><div class="preview"><img src="assets/logos/combo-v-full-charcoal.png" alt="combo-v-full"></div><div class="info"><h3>combo-v-full-{色}</h3><p class="usage">logo / Mr.Whisky / 威士忌先生 三層</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-full-charcoal.png')">📋 charcoal</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-full-tan.png')">tan</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-full-green.png')">green</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-full-cream.png')">cream</button></div></div></div>
+        <div class="asset-card"><div class="preview"><img src="assets/logos/combo-v-full-reverse-charcoal.png" alt="combo-v-full-reverse"></div><div class="info"><h3>combo-v-full-reverse-{色}</h3><p class="usage">logo / 威士忌先生 / Mr.Whisky 三層（順序顛倒）</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-full-reverse-charcoal.png')">📋 charcoal</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-full-reverse-tan.png')">tan</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-full-reverse-green.png')">green</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-full-reverse-cream.png')">cream</button></div></div></div>
+        <div class="asset-card"><div class="preview" style="aspect-ratio:1/3"><img src="assets/logos/combo-v-tall-charcoal.png" alt="combo-v-tall" style="object-fit:contain"></div><div class="info"><h3>combo-v-tall-{色}</h3><p class="usage">中文垂直書寫超細長版（書脊／酒櫃側貼／IG Story）</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-tall-charcoal.png')">📋 charcoal</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-tall-tan.png')">tan</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-tall-green.png')">green</button><button class="btn" onclick="copyAssetUrl(this, 'assets/logos/combo-v-tall-cream.png')">cream</button></div></div></div>
       </div>
 
       <h3 style="margin: 48px 0 16px; color: var(--muted); font-size: 16px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;">輔助圖形 — X 形花紋系統</h3>
-      <p style="margin-bottom: 20px; opacity: 0.85;">輔助圖形的設計與表現有利於品牌在形象上的建立，透過更豐富多元的設計元素，在廣宣上使消費者對於品牌有更加來的有印象。設計概念為將原 LOGO 品牌標誌圖形拆解復原成明顯的 M 與 W 兩字重新排列組合作為輔圖發展。</p>
+      <p style="margin-bottom: 20px; opacity: 0.85;">輔助圖形的設計與表現有利於品牌形象建立。設計概念為將原 LOGO 拆解成 M 與 W 兩字重新排列組合。提供兩款獨立單元（可重複排列為 pattern tile），每款 4 色變體。</p>
 
-      <div class="photo-grid" style="margin-bottom: 24px">
-        <div class="photo-item">
-          <img src="assets/illustrations/aux-pattern-construction.png" alt="輔助圖形構成元素" style="width:100%;display:block">
-          <div class="caption">構成元素（一）— 從 logo 拆解出 X 形花紋</div>
-        </div>
-        <div class="photo-item">
-          <img src="assets/illustrations/aux-pattern-tile.png" alt="輔助圖形排列" style="width:100%;display:block">
-          <div class="caption">排列規範 — 1:1 切割排列</div>
-        </div>
-        <div class="photo-item">
-          <img src="assets/illustrations/aux-pattern-tan.png" alt="暖棕配色" style="width:100%;display:block">
-          <div class="caption">色彩變體 — 單色棕 / 雙色棕白</div>
-        </div>
-        <div class="photo-item">
-          <img src="assets/illustrations/aux-pattern-green.png" alt="深綠配色" style="width:100%;display:block">
-          <div class="caption">色彩變體 — 深綠 / 深綠+棕</div>
-        </div>
+      <h4 style="margin: 24px 0 12px; color: var(--gold); font-size: 14px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;">XPattern 1 — M 形（較密）</h4>
+      <div class="asset-grid">
+        <div class="asset-card"><div class="preview"><img src="assets/illustrations/xpattern-1-charcoal.png" alt="xpattern-1-charcoal"></div><div class="info"><h3>xpattern-1-charcoal</h3><p class="usage">深灰；淺底用</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/illustrations/xpattern-1-charcoal.png')">📋 複製連結</button></div></div></div>
+        <div class="asset-card"><div class="preview"><img src="assets/illustrations/xpattern-1-tan.png" alt="xpattern-1-tan"></div><div class="info"><h3>xpattern-1-tan</h3><p class="usage">暖棕；主視覺 pattern</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/illustrations/xpattern-1-tan.png')">📋 複製連結</button></div></div></div>
+        <div class="asset-card"><div class="preview"><img src="assets/illustrations/xpattern-1-green.png" alt="xpattern-1-green"></div><div class="info"><h3>xpattern-1-green</h3><p class="usage">深綠；紙袋／信封內襯</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/illustrations/xpattern-1-green.png')">📋 複製連結</button></div></div></div>
+        <div class="asset-card"><div class="preview dark-preview"><img src="assets/illustrations/xpattern-1-cream.png" alt="xpattern-1-cream"></div><div class="info"><h3>xpattern-1-cream</h3><p class="usage">米色；深底背景紋</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/illustrations/xpattern-1-cream.png')">📋 複製連結</button></div></div></div>
       </div>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:8px">完整對稱版（4 元件鏡像構成）：<a href="assets/illustrations/xpattern-1-composition.png" target="_blank" style="color:var(--gold)">xpattern-1-composition.png</a></p>
 
-      <p style="font-size:13px;color:var(--muted);margin-bottom:32px">使用守則：1:1 比例切割、不可變形、底色僅限「暖棕 #D2A475 / 米 #F6F1D6 / 深綠 #002504」三色或其組合。詳見「色彩」頁的輔助色彩。</p>
-
-      <h3 style="margin: 48px 0 16px; color: var(--muted); font-size: 16px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;">輔助圖形 — 緞帶 / 瓶身系統</h3>
-      <p style="margin-bottom: 20px; opacity: 0.85;">第二套輔助圖形系統。設計概念為將原 LOGO 品牌標誌圖形拆解成兩條曲線型重新組合排列為蝴蝶狀對稱型，作為輔圖發展，為品牌形象帶來更為豐富的變化。</p>
-
-      <div class="photo-grid" style="margin-bottom: 24px">
-        <div class="photo-item">
-          <img src="assets/illustrations/aux-pattern-2-construction.png" alt="緞帶系統構成元素" style="width:100%;display:block">
-          <div class="caption">構成元素（二）— 從 logo 拆解出緞帶／瓶身形狀</div>
-        </div>
-        <div class="photo-item">
-          <img src="assets/illustrations/aux-pattern-2-tile.png" alt="緞帶系統排列" style="width:100%;display:block">
-          <div class="caption">排列規範 — 大型背景 tile</div>
-        </div>
-        <div class="photo-item">
-          <img src="assets/illustrations/aux-pattern-2-tan.png" alt="暖棕配色" style="width:100%;display:block">
-          <div class="caption">色彩變體 — 單色棕 / 雙色棕白</div>
-        </div>
-        <div class="photo-item">
-          <img src="assets/illustrations/aux-pattern-2-green.png" alt="深綠配色" style="width:100%;display:block">
-          <div class="caption">色彩變體 — 深綠 / 深綠+棕</div>
-        </div>
-        <div class="photo-item" style="grid-column: span 2">
-          <img src="assets/illustrations/aux-pattern-2-application.png" alt="緞帶系統應用示意" style="width:100%;display:block">
-          <div class="caption">應用示意 — 深綠底大型 pattern 背景（橫式）</div>
-        </div>
+      <h4 style="margin: 32px 0 12px; color: var(--gold); font-size: 14px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase;">XPattern 2 — 緞帶形（較疏）</h4>
+      <div class="asset-grid">
+        <div class="asset-card"><div class="preview"><img src="assets/illustrations/xpattern-2-charcoal.png" alt="xpattern-2-charcoal"></div><div class="info"><h3>xpattern-2-charcoal</h3><p class="usage">深灰；淺底用</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/illustrations/xpattern-2-charcoal.png')">📋 複製連結</button></div></div></div>
+        <div class="asset-card"><div class="preview"><img src="assets/illustrations/xpattern-2-tan.png" alt="xpattern-2-tan"></div><div class="info"><h3>xpattern-2-tan</h3><p class="usage">暖棕；大型背板／包裝</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/illustrations/xpattern-2-tan.png')">📋 複製連結</button></div></div></div>
+        <div class="asset-card"><div class="preview"><img src="assets/illustrations/xpattern-2-green.png" alt="xpattern-2-green"></div><div class="info"><h3>xpattern-2-green</h3><p class="usage">深綠；橫幅、外盒</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/illustrations/xpattern-2-green.png')">📋 複製連結</button></div></div></div>
+        <div class="asset-card"><div class="preview dark-preview"><img src="assets/illustrations/xpattern-2-cream.png" alt="xpattern-2-cream"></div><div class="info"><h3>xpattern-2-cream</h3><p class="usage">米色；深底大型 pattern</p><div class="btn-group"><button class="btn" onclick="copyAssetUrl(this, 'assets/illustrations/xpattern-2-cream.png')">📋 複製連結</button></div></div></div>
       </div>
-
-      <p style="font-size:13px;color:var(--muted);margin-bottom:32px">兩套輔助圖形系統可依使用情境擇一搭配。X 形花紋（一）較密、適合小尺寸應用（杯墊、信封、紙袋）；緞帶系統（二）較疏、適合大尺寸應用（背板、橫幅、包裝外盒）。</p>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:32px">完整對稱版：<a href="assets/illustrations/xpattern-2-composition.png" target="_blank" style="color:var(--gold)">xpattern-2-composition.png</a> · 兩款搭配建議：XPattern 1 較密適合小尺寸（杯墊、信封、紙袋）；XPattern 2 較疏適合大尺寸（背板、橫幅、外盒）。</p>
 
       <h3 style="margin: 48px 0 16px; color: var(--muted); font-size: 16px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;">Logo 應用示意</h3>
       <p style="margin-bottom: 20px; opacity: 0.85;">以下為 Logo 在實體載體上的應用範例（取自品牌規範 PDF）。AI 設計工具或合作對象可參考這些範例理解品牌實際呈現方式。</p>
@@ -255,7 +146,7 @@
         <h4>Contact</h4>
         <ul class="footer-contact">
           <li><span class="label">Line</span><a href="https://line.me/R/ti/p/@mrwhisky">@mrwhisky</a></li>
-          <li><span class="label">IG</span><a href="https://instagram.com/mrwhisk_store">@mrwhisk_store</a></li>
+          <li><span class="label">IG</span><a href="https://www.instagram.com/mrwhisky_store">@mrwhisky_store</a></li>
           <li><span class="label">Email</span><a href="mailto:chx0526@gmail.com">chx0526@gmail.com</a></li>
         </ul>
       </div>

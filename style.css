@@ -135,8 +135,8 @@ main {
   display: block;
   width: 280px;
   height: 280px;
-  -webkit-mask: url('assets/logos/logo-stacked-dark.png') center/contain no-repeat;
-  mask: url('assets/logos/logo-stacked-dark.png') center/contain no-repeat;
+  -webkit-mask: url('assets/logos/combo-v-full-charcoal.png') center/contain no-repeat;
+  mask: url('assets/logos/combo-v-full-charcoal.png') center/contain no-repeat;
   -webkit-mask-mode: luminance;
   mask-mode: luminance;
   background-color: var(--cream);
@@ -546,8 +546,8 @@ footer {
 
 /* ===== Brand Logo Reference (CSS-tinted via mask) ===== */
 .brand-logo {
-  -webkit-mask: url('assets/logos/logo-color-circle.png') center/contain no-repeat;
-  mask: url('assets/logos/logo-color-circle.png') center/contain no-repeat;
+  -webkit-mask: url('assets/logos/mark-charcoal.png') center/contain no-repeat;
+  mask: url('assets/logos/mark-charcoal.png') center/contain no-repeat;
 }
 .brand-logo.brand-tan { background-color: #D2A475; }
 .brand-logo.brand-charcoal { background-color: #3E3A39; }
