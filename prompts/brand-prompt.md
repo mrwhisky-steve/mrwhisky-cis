@@ -50,6 +50,7 @@
 - ❌ 「立即註冊」「開始使用」這類 SaaS 文案
 - ❌ 過度動畫、彈跳效果
 - ❌ **用文字寫 "Mr.Whisky" 當品牌標誌**——一律使用本檔案「Logo」段落列出的 PNG URL（`<img src="...">`），不可用 CSS 文字、wordmark 重打、或 SVG 模仿替代。Logo 為訂製字體，文字版會破壞識別。
+- ❌ **把輔助圖型 `xpattern-{1,2}-{色}.png` 放大當主視覺**（hero 大圖、單張裝飾、佔版面 30%+）— 它只能當「密集小重複 tile（40-80px）」或「底部細邊飾條（24-40px 高）」，詳見下方「輔助圖型」段落。
 
 ## 文案語氣
 
@@ -61,7 +62,7 @@
 ## 頁尾統一資訊
 
 - **門市**：
-  - 台中市南屯區永春東路 1122-1 號
+  - 台中市南屯區市政南二路 185 號(2026-05 底搬遷至永春東路 1122-1 號)
   - 台北市大安區復興南路一段 141 號
 - **聯絡**：
   - Line `@mrwhisky`
@@ -131,22 +132,43 @@
 
 ## 輔助圖型（XPattern 1 · XPattern 2）
 
-兩款獨立單元，可重複排列為背景 pattern。每款 4 色變體。
+兩款品牌輔助圖型，皆從原 LOGO 拆解後重新組合為對稱單元。每款 4 色變體。
 
 **Base URL**：`https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/`
 
-| Pattern | URL（替換 `{色}` 為 charcoal/tan/green/cream） |
-|---|---|
-| **XPattern 1**（M 形，較密；杯墊／信封／紙袋） | `xpattern-1-{色}.png` |
-| **XPattern 2**（緞帶形，較疏；背板／橫幅／外盒） | `xpattern-2-{色}.png` |
-| XPattern 1 完整對稱版 | `xpattern-1-composition.png` |
-| XPattern 2 完整對稱版 | `xpattern-2-composition.png` |
+| Pattern | 形狀 | URL |
+|---|---|---|
+| **XPattern 1** | 蝴蝶緞帶對稱型（4 條 M 緞帶上下左右鏡像） | `xpattern-1-{色}.png` |
+| **XPattern 2** | X 形花紋對稱型（4 個 S 緞帶旋轉鏡像） | `xpattern-2-{色}.png` |
 
-舉例：
-- `xpattern-1-tan.png` — 暖棕單一單元
-- `xpattern-2-green.png` — 深綠單一單元
+> `xpattern-{1,2}-element-{色}.png` 是拆解零件，**不是** pattern 主視覺。
 
-**用法**：把單一單元當 CSS `background-image` + `background-repeat: repeat`，或在設計工具裡平鋪。
+### ⚠️ 用法守則（最常出錯的地方）
+
+輔助圖型只能作為「點綴」或「重複底紋」使用，**禁止單張放大當主視覺**。
+
+**✅ 正確 A — 密集小重複 tile（杯墊風）**
+```css
+background-image: url('https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/xpattern-1-tan.png');
+background-size: 56px 56px;
+background-repeat: repeat;
+```
+
+**✅ 正確 B — 底部細邊飾條（紙袋風）**
+```html
+<div style="
+  height: 32px;
+  background-image: url('https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/xpattern-2-tan.png');
+  background-size: 24px 24px;
+  background-repeat: repeat-x;
+"></div>
+```
+
+**❌ 禁止**：把單一 `xpattern-{1,2}-{色}.png` 放大當 hero／單張裝飾／佔版面 30%+。判斷：尺寸 > 120px 就先停下來。
+
+**參考應用尺寸**：
+- 杯墊（dense tile）：`logo-application-coaster.png`
+- 紙袋（細邊飾條）：`logo-application-paperbag.png`
 
 **設計概念稿**：https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/design-concept.png
 
