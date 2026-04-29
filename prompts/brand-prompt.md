@@ -147,10 +147,10 @@
 
 輔助圖型只能作為「點綴」或「重複底紋」使用，**禁止單張放大當主視覺**。
 
-**✅ 正確 A — 密集小重複 tile（杯墊風）**
+**✅ 正確 A — 密集小重複 tile（杯墊風，CIS 指定 tiling 主來源是 xpattern-2）**
 ```css
-background-image: url('https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/xpattern-1-tan.png');
-background-size: 56px 56px;
+background-image: url('https://mrwhisky-steve.github.io/mrwhisky-cis/assets/illustrations/xpattern-2-tan.png');
+background-size: 64px 64px;
 background-repeat: repeat;
 ```
 
